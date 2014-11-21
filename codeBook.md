@@ -1,7 +1,7 @@
-			##**Code Book for Human Activity and Recognition using Smartphones**
+##**Code Book for Human Activity and Recognition using Smartphones**
 
 
-subjec				1..2
+subject				1..2
 	Subject number
 				1..30	.Unique numbers for each of 30 volunteers
 		
