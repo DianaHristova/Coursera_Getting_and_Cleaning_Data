@@ -1,6 +1,6 @@
 #**Code Book for Human Activity and Recognition using Smartphones**
 
-##**Variable**
+##**Variables**
 
 ```
 subject			1..2
