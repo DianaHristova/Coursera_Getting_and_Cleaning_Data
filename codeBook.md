@@ -1,18 +1,18 @@
 ##**Code Book for Human Activity and Recognition using Smartphones**
 
-
-subject				1..2
+```
+subject			1..2
 	Subject number
 				1..30	.Unique numbers for each of 30 volunteers
 		
-activityType			6..18
+activityType	6..18
 	Activity type
 				WALKING
-                		WALKING_UPSTAIRS
-                		WALKING_DOWNSTAIRS
-                		SITTING
-                		STANDING
-                		LAYING
+               	WALKING_UPSTAIRS
+                WALKING_DOWNSTAIRS
+                SITTING
+                STANDING
+                LAYING
 timeBodyAccelerometer-mean-X	
 	Mean of time of body acceleration signal X
 				-1..1 .Unique time for each observation
@@ -276,7 +276,7 @@ frequencyBodyBodyGyroscopeJerkMagnitude-mean
 frequencyBodyBodyGyroscopeJerkMagnitude-std  
 	Standard deviation of Magnitude of frequency of Jerk signal of body gyroscope
 				-1..1 .Unique frequency for each observation
-
+```
 				
 NOTE: The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz.
 
