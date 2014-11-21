@@ -1,4 +1,6 @@
-##**Code Book for Human Activity and Recognition using Smartphones**
+#**Code Book for Human Activity and Recognition using Smartphones**
+
+##**Variable**
 
 ```
 subject			1..2
@@ -278,7 +280,9 @@ frequencyBodyBodyGyroscopeJerkMagnitude-std
 				-1..1 .Unique frequency for each observation
 ```
 				
-NOTE: The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz.
+##**Data**
+
+The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz.
 
 Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals (tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ). Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm (tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag).
 
@@ -286,3 +290,7 @@ Finally a Fast Fourier Transform (FFT) was applied to some of these signals prod
 
 These signals were used to estimate variables of the feature vector for each pattern:
 '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
+
+##**Transformations**
+
+All values in tinyData.txt are the means of the 66 variables defined above by subject and  type of activity. The 66 variables in turn are the means and standard deviations of all the variables in the original dataset. Since there are 30 subjects with 6 activities each, tidyData.txt has 180 lines and 68 columns (subject number column, activity type columns plus 66 variable columns). The detailed steps from the original data to tidyData.txt are outlines in the README.md file.
